@@ -1,0 +1,21 @@
+﻿<Window x:Class="Grafika_PZ1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Grafika_PZ1"
+        mc:Ignorable="d"
+        Title="PZ1" Height="600" Width="1260" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Label x:Name="label" Content="" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="26" Foreground="Red" FontWeight="ExtraBold" Margin="0,10,0,0" VerticalAlignment="Top" Width="1254" Height="44"/>
+        <Button x:Name="ellipseButton" BorderThickness="0" Content="Ellipse" HorizontalAlignment="Left" Height="34" Margin="0,54,0,0" VerticalAlignment="Top" Width="180" Click="EllipseButton_Click"/>
+        <Button x:Name="rectangleButton" BorderThickness="0" Content="Rectangle" HorizontalAlignment="Left" Height="34" Margin="180,54,0,0" VerticalAlignment="Top" Width="180" Click="RectangleButton_Click" />
+        <Button x:Name="polygonButton" BorderThickness="0" Content="Polygon" HorizontalAlignment="Left" Height="34" Margin="360,54,0,0" VerticalAlignment="Top" Width="180" Click="PolygonButton_Click" />
+        <Button x:Name="imageButton" BorderThickness="0" Content="Image" HorizontalAlignment="Left" Height="34" Margin="540,54,0,0" VerticalAlignment="Top" Width="180" Click="ImageButton_Click" />
+        <Button x:Name="undoButton" BorderThickness="0" Content="Undo" Background="LightGreen" HorizontalAlignment="Left" Height="34" Margin="720,54,0,0" VerticalAlignment="Top" Width="180" Click="UndoButton_Click" />
+        <Button x:Name="redoButton" BorderThickness="0" Content="Redo" Background="LightGreen" HorizontalAlignment="Left" Height="34" Margin="900,54,0,0" VerticalAlignment="Top" Width="180" Click="RedoButton_Click" />
+        <Button x:Name="clearButton" BorderThickness="0" Content="Clear" Background="LightCoral" HorizontalAlignment="Left" Height="34" Margin="1080,54,0,0" VerticalAlignment="Top" Width="174" Click="ClearButton_Click" />
+        <Canvas Name="canvas" HorizontalAlignment="Left" Height="483" Margin="0,88,0,0" VerticalAlignment="Top" Width="1254" MouseRightButtonDown="Canvas_MouseRightButtonDown" MouseLeftButtonDown="Canvas_MouseLeftButtonDown" Background="Transparent"/>
+
+    </Grid>
+</Window>
